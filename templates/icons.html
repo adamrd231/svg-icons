@@ -16,9 +16,9 @@
 
 <h1>Open Source SVG Icons</h1>
 
-      <form method="POST" action="/color">
-        <label for="color">Color</label>
-        <input id="color" name="color" type="text" value={{color}}>
+      <form class="color_form" id="color" method="POST" action="/color">
+        <label class="label" for="color">CHANGE COLOR</label>
+        <input class="color_input" id="color" name="color" type="text" value="{{color}}" placeholder="Type Here">
       </form>
 
 
@@ -54,7 +54,7 @@
 
     <div class="sub_group">
 
-      <a class="background" title="Old Style Phone" href="{{  url_for('static', filename='grey-icons/linked-in.svg')  }}">
+      <a class="background " title="Old Style Phone" href="{{  url_for('static', filename='grey-icons/linked-in.svg')  }}">
         <img class="icon" src="{{  url_for('static', filename='grey-icons/linked-in.svg')  }}" />
         <div class="icon_text">linked-in</div>
       </a>
