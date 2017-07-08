@@ -1,5 +1,5 @@
 * {
-  font-family: raleway, Helvetica;
+  font-family: Raleway, Helvetica;
 }
 
 img {
@@ -16,6 +16,14 @@ h1 {
   font-size: 3em;
   color: #333;
   padding: 5%;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.66em;
+  padding: 2%;
+  font-weight: 300;
 }
 
 a {
@@ -39,11 +47,15 @@ a {
 
 .flex_body {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  flex-grow: 2;
+  flex-direction: column;
+  flex-grow: 1;
   justify-content: space-around;
-  flex-basis: auto;
+  flex-basis: 1;
+}
+
+.sub_group {
+  display: flex;
+  flex-direction: row;
 }
 
 #button {
