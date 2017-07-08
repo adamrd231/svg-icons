@@ -1,5 +1,6 @@
 {%   extends "base.html"   %}
 {%  block content  %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 <div class="flex_header">
@@ -14,9 +15,10 @@
 </div>
 
 
-<h1>Open Source SVG Icons</h1>
+<h1 class="h1">Open Source SVG Icons</h1>
 
-<input id="color_picker"/>
+<input id="color_picker" type="text"/>
+<input id="submit_color" type="submit" />
 
 
 <!-- NEW ICON GROUP -->
@@ -51,7 +53,7 @@
 
     <div class="sub_group">
 
-      <a class="background " title="Old Style Phone" href="{{  url_for('static', filename='grey-icons/linked-in.svg')  }}">
+      <a id="phone" class="background" title="Old Style Phone" href="{{  url_for('static', filename='grey-icons/linked-in.svg')  }}">
         <img class="icon" src="{{  url_for('static', filename='grey-icons/linked-in.svg')  }}" />
         <div class="icon_text">linked-in</div>
       </a>
@@ -78,7 +80,24 @@
 
 
 
+<script>
 
+$('#submit_color').click(function() {
+  user_color = $('#color_picker').val();
+  console.log(user_color);
+
+  $('.h1').css('color', user_color);
+
+  $('path').attr('fill', '#000');
+
+
+
+  }
+  );
+
+
+
+</script>
 
 
 
