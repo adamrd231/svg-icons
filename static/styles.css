@@ -1,0 +1,106 @@
+* {
+  font-family: raleway, Helvetica;
+}
+
+img {
+  width: 5em;
+  margin-right: 5%;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #333;
+  padding: 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*  NAV BAR STYLING     */
+
+.flex_header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-basis: auto;
+  padding-bottom: 3%;
+  border-bottom: 1px solid rgba(0,0,0, .3);
+
+}
+
+/*  Icon Body Styling    */
+
+.flex_body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-grow: 2;
+  justify-content: space-around;
+  flex-basis: auto;
+}
+
+#button {
+  font-family: raleway;
+  margin-top:1.5%;
+  display: inline-flex;
+  color: #666;
+  text-align: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1.3%;
+  padding-bottom: 1%;f;
+  font-size: 1em;
+  border-style: solid;
+  border-color: black;
+  border-width: .11em;
+}
+
+#button:hover {
+  color: skyblue;
+}
+
+#button_text {
+  background: transparent;
+  border: none;
+  font-size: 1em;
+}
+
+#button_text:hover {
+  color: skyblue;
+}
+
+#linebreak {
+  margin-top: 3%;
+}
+
+.background {
+  background-color: #eee;
+  padding: 1.6%;
+  display: flex;
+  flex: 1;
+  margin: .4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+.background:hover {
+  background-color: #ddd;
+  transition: .5s;
+}
+
+.icon_text {
+  font-family: Helvetica;
+  padding-top: 3%;
+  color: #333;
+
+}

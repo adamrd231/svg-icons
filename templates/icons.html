@@ -1,0 +1,48 @@
+{%   extends "base.html"   %}
+{%  block content  %}
+
+
+<div class="flex_header">
+  <a id="button" href={{  url_for('static', filename='Archive.zip' )  }}><div>All_Icons</div></a>
+  <a id="button" href="http://rdconcepts.design">Designer</a>
+    <form id="button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="CEDW9ZUBHE8XL">
+        <input id="button_text" type="submit" border="0" value="DONATE" alt="DONATE">
+    </form>
+
+</div>
+
+
+<h1>Open Source SVG Icons</h1>
+
+      <form method="POST" action="/color">
+        <label for="color">Color</label>
+        <input id="color" name="color" type="text" value={{color}}>
+      </form>
+
+  <div class="icon_group, flex_body">
+
+    <a class="background" title="Old Style Phone" href="{{  url_for('static', filename='shadowIcons-01.svg')  }}">
+      <img class="icon" src="{{  url_for('static', filename='shadowIcons-01.svg')  }}" />
+      <div class="icon_text">old-phone</div>
+    </a>
+
+    <a class="background" href="{{  url_for('static', filename='shadowIcons-02.svg')  }}">
+      <img class="icon" src="{{  url_for('static', filename='shadowIcons-02.svg')  }}" />
+      <div class="icon_text">gmail-shadow</div>
+    </a>
+
+    <a class="background" href="{{  url_for('static', filename='shadowIcons-03.svg')  }}">
+      <img class="icon" src="{{  url_for('static', filename='shadowIcons-03.svg')  }}" />
+      <div class="icon_text">instagram</div>
+    </a>
+  <div>
+
+
+
+
+
+
+
+  {%  endblock  %}
