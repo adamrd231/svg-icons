@@ -2,7 +2,7 @@
   font-family: Raleway, Helvetica;
 }
 
-img {
+img, svg {
   width: 5em;
   margin-right: 5%;
 }

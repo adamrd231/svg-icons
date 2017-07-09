@@ -12,13 +12,6 @@ def index():
           title="SVG Icons",
           category="icon",)
 
-@app.route('/color', methods=['POST'])
-def color():
-    # Use color variable to assign it's value to the svg
-    return render_template('icons.html',
-          title="SVG Icons Colored",
-          category="icon",
-          )
 
 if __name__ == '__main__':
     app.run(debug=True)
