@@ -1,5 +1,5 @@
 # svg-icons
 A icon distribution system. 
 
-##AUTHORS
+### AUTHORS
 Adam Reed | adam.rdconcepts@gmail.com
